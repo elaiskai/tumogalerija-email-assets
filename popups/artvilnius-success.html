@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUMO galerija — ArtVilnius VIP pop-up (success)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#181818;--paper:#ffffff;--accent:#8731e8;--line:#e8e8e8;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:#f4f4f5;font-family:'Nunito',Arial,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
+  .popup{width:100%;max-width:720px;background:var(--paper);border-radius:16px;overflow:hidden;display:flex;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;}
+  .popup__media{flex:0 0 44%;background:#e9e6ef url('https://cdn.jsdelivr.net/gh/elaiskai/tumogalerija-email-assets/popups/artvilnius-vip-hero.png') center/cover no-repeat;min-height:520px;}
+  .popup__body{flex:1;padding:52px 44px;text-align:center;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .popup__close{position:absolute;top:16px;right:18px;border:0;background:transparent;font-size:22px;line-height:1;color:var(--ink);cursor:pointer;opacity:.6;}
+  .check{width:64px;height:64px;border-radius:50%;background:#f5f0fc;display:flex;align-items:center;justify-content:center;margin-bottom:24px;}
+  .check svg{width:30px;height:30px;}
+  .popup__title{font-family:'Figtree',sans-serif;font-weight:800;font-size:26px;line-height:1.15;letter-spacing:.01em;color:var(--ink);margin:0 0 16px;text-transform:uppercase;}
+  .popup__text{font-size:15px;line-height:1.6;color:#444;margin:0 auto 18px;max-width:340px;}
+  .popup__hint{font-size:13px;line-height:1.5;color:var(--accent);margin:0 auto 30px;max-width:320px;}
+  .popup__cta{display:inline-block;padding:16px 34px;border:0;border-radius:40px;background:var(--ink);color:#fff;font-family:'Figtree',sans-serif;font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none;}
+  @media(max-width:560px){
+    .popup{flex-direction:column;max-width:380px;}
+    .popup__media{flex:none;min-height:200px;}
+    .popup__body{padding:40px 26px;}
+    .popup__title{font-size:23px;}
+  }
+</style>
+</head>
+<body>
+  <div class="popup">
+    <div class="popup__media" aria-hidden="true"></div>
+    <div class="popup__body">
+      <button class="popup__close" aria-label="Uždaryti">&times;</button>
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12.5L10 17.5L19 7" stroke="#8731e8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="popup__title">Ačiū, registracija priimta</h2>
+      <p class="popup__text">Jūsų registracija priimta - dalyvaujate žaidime dėl 2 VIP kvietimų į meno mugę „ArtVilnius“. Laimėtojus paskelbsime likus kelioms dienoms iki mugės.</p>
+      <p class="popup__hint">Sekite savo el. paštą - ten atkeliaus naujienos.</p>
+      <a class="popup__cta" href="#">Apžiūrėti galeriją</a>
+    </div>
+  </div>
+</body>
+</html>
